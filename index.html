@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIBuddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="nav_logo">MEDIBuddy</div>
+            <button class="nav_toggle" aria-label="Toggle menu"><i class="ri-menu-line"></i></button>
+            <ul class="nav_links">
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="#about">About Us</a></li>
+                <li class="links"><a href="services.html">Services</a></li>
+                <li class="links"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn register-btn" type="button">Sign Up</button>
+                <button class="btn nav-login-btn" type="button">Log In</button>
+            </div>
+        </nav>
+
+        <section class="signup-section modal-section">
+            <div class="signup-card modal-card" id="sign-up">
+                <div class="signup-intro">
+                    <p class="signup-badge">Join MEDIBuddy</p>
+                    <button class="modal-close" type="button" aria-label="Close sign up"><i class="ri-close-line"></i></button>
+
+                    <h2>Create your account</h2>
+                    <p>Get quick medical help, book services, and stay connected with trusted professionals.</p>
+                </div>
+
+                <form class="signup-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email Address</label>
+                        <input type="email" id="signup-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" required>
+                            <option value="">Select gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="other">Other</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                        <small class="password-message" aria-live="polite"></small>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label" for="terms">
+                            <input type="checkbox" id="terms" required>
+                            <span>I agree to the Terms &amp; Conditions</span>
+                        </label>
+                    </div>
+                    <button class="btn signup-btn" type="submit">Sign Up</button>
+                </form>
+
+                <p class="form-footer">Already have an account? <a href="#" class="open-login">Log in</a></p>
+            </div>
+        </section>
+
+        <section class="login-section modal-section">
+            <div class="signup-card modal-card" id="login-modal">
+                <div class="signup-intro">
+                    <p class="signup-badge">Member Login</p>
+                    <button class="modal-close" type="button" aria-label="Close login"><i class="ri-close-line"></i></button>
+
+                    <h2>Welcome Back</h2>
+                    <p>Enter your email and password to access your dashboard.</p>
+                </div>
+
+                <form class="signup-form login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                    <p class="login-note">Don’t have an account yet? <a href="#" class="open-signup">Create Account</a></p>
+                    <button class="btn signup-btn login-submit" type="button">Login</button>
+                </form>
+            </div>
+        </section>
+
+        <header class="header">
+            <div class="content">
+                <h1><span>Get Quick</span><br>Medical Services</h1>
+                <p>
+                    In today's fast-paced world, access to prompt and efficient medical emergency or seeking immediate
+                    medical attention, the ability to receive quick medical services can significantly impact the
+                    outcome of a situation.
+                </p>
+                <button class="btn login-btn" type="button">Get Services</button>
+            </div>
+
+            <div class="image">
+
+                <span class="image_bg"></span>
+                <img src="./img/20260806_144340.png" alt="">
+
+                <div class="image_content image_content_1">
+                    <span><i class="ri-user-3-line"></i></span>
+                    <div class="details">
+                        <h4>1520+</h4>
+                        <p>Active Clients</p>
+                    </div>
+                </div>
+
+                <div class="image_content image_content_2">
+                    <ul>
+                        <li>
+                            <span><i class="ri-check-line"></i></span>
+                            Get 20% off on every 1st month
+                        </li>
+                        <li>
+                            <span><i class="ri-check-line"></i></span>
+                            Expert Doctors
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="about-page" id="about">
+            <section class="about-intro">
+                <div class="section-heading">
+                    <p class="eyebrow">About MEDIBuddy</p>
+                    <h2>Healthcare designed for everyday life.</h2>
+                </div>
+
+                <div class="about-hero-grid">
+                    <div class="about-copy">
+                        <p>
+                            MEDIBuddy is a digital healthcare platform designed to make access to medical services
+                            easier, faster and more convenient. We connect patients with trusted professionals,
+                            modern care solutions, and a more seamless way to manage health needs from anywhere.
+                        </p>
+                        <p>
+                            Our approach combines compassionate support with efficient digital tools so that people can
+                            receive timely guidance, book services, and stay informed without unnecessary delays.
+                        </p>
+                    </div>
+
+                    <div class="about-visual">
+                        <img src="./img/Doctor&patient-about.jpeg" alt="Doctor and patient discussing health care">
+                        <div class="floating-badge">
+                            <i class="ri-heart-pulse-line"></i>
+                            <span>Trusted Care</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mission-vision">
+                <article class="story-card">
+                    <div class="story-icon"><i class="ri-focus-3-line"></i></div>
+                    <p class="eyebrow">Our Mission</p>
+                    <h3>To make quality healthcare more accessible and patient-friendly.</h3>
+                    <p>
+                        We aim to simplify access to medical support by connecting patients with dependable care,
+                        clear communication, and a digital experience that saves time and reduces stress.
+                    </p>
+                </article>
+
+                <article class="story-card">
+                    <div class="story-icon"><i class="ri-compass-3-line"></i></div>
+                    <p class="eyebrow">Our Vision</p>
+                    <h3>To become a leading digital health partner for every community.</h3>
+                    <p>
+                        MEDIBuddy envisions a future where healthcare is more proactive, more connected, and more
+                        inclusive, helping people access the right care at the right time with confidence.
+                    </p>
+                </article>
+            </section>
+
+            <section class="values-section">
+                <div class="section-heading center">
+                    <p class="eyebrow">Our Values</p>
+                    <h2>What guides everything we do.</h2>
+                </div>
+
+                <div class="values-grid">
+                    <article class="value-card">
+                        <span><i class="ri-user-heart-line"></i></span>
+                        <h3>Patient-Centered Care</h3>
+                        <p>We design care around patient comfort, clarity, and long-term wellbeing.</p>
+                    </article>
+                    <article class="value-card">
+                        <span><i class="ri-award-line"></i></span>
+                        <h3>Excellence</h3>
+                        <p>We uphold high standards in service, professionalism, and healthcare delivery.</p>
+                    </article>
+                    <article class="value-card">
+                        <span><i class="ri-lightbulb-flash-line"></i></span>
+                        <h3>Innovation</h3>
+                        <p>We embrace digital solutions that improve speed, quality, and patient experience.</p>
+                    </article>
+                    <article class="value-card">
+                        <span><i class="ri-ease-of-access-line"></i></span>
+                        <h3>Accessibility</h3>
+                        <p>Healthcare should be simple to reach, easy to understand, and available to more people.</p>
+                    </article>
+                    <article class="value-card">
+                        <span><i class="ri-shield-check-line"></i></span>
+                        <h3>Trust</h3>
+                        <p>Patients rely on our transparency, safety, and dependable guidance every step of the way.</p>
+                    </article>
+                    <article class="value-card">
+                        <span><i class="ri-lock-2-line"></i></span>
+                        <h3>Confidentiality</h3>
+                        <p>We protect personal health information with privacy-first practices and discretion.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="reasons-section">
+                <div class="section-heading center">
+                    <p class="eyebrow">Why Choose Us?</p>
+                    <h2>Support that is efficient, personal, and reliable.</h2>
+                </div>
+
+                <div class="reasons-grid">
+                    <article class="reason-card">
+                        <div class="reason-icon"><i class="ri-user-star-line"></i></div>
+                        <h3>Qualified Professionals</h3>
+                        <p>Access to competent healthcare professionals who bring experience, empathy, and expertise.</p>
+                    </article>
+                    <article class="reason-card">
+                        <div class="reason-icon"><i class="ri-timer-flash-line"></i></div>
+                        <h3>Convenient Access</h3>
+                        <p>Patients can access services without unnecessary delays, reducing time spent waiting for care.</p>
+                    </article>
+                    <article class="reason-card">
+                        <div class="reason-icon"><i class="ri-empathize-line"></i></div>
+                        <h3>Patient-Focused</h3>
+                        <p>The platform is designed around the patient's needs, goals, and comfort throughout care.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="team-section">
+                <div class="section-heading center">
+                    <p class="eyebrow">Our Medical Team</p>
+                    <h2>Experienced professionals committed to better care.</h2>
+                </div>
+
+                <div class="team-grid">
+                    <article class="team-card">
+                        <img src="./img/Doc1.png" alt="Doctor smiling in clinic">
+                        <div class="team-content">
+                            <h3>Dr. Margaret Nsa</h3>
+                            <p>General Practitioner</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <img src="./img/Doc2.png" alt="Healthcare professional consulting">
+                        <div class="team-content">
+                            <h3>Dr. Daniel Kofi</h3>
+                            <p>Cardiology Consultant</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <img src="./img/Doc3.png" alt="Medical response team providing care">
+                        <div class="team-content">
+                            <h3>Dr. Sarah Bello</h3>
+                            <p>Emergency Medicine</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <div class="section-heading center">
+                    <p class="eyebrow">Achievements</p>
+                    <h2>Trusted by patients and families across our community.</h2>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <strong data-target="1520" data-suffix="+">0</strong>
+                        <span>Active Clients</span>
+                    </div>
+                    <div class="stat-box">
+                        <strong data-target="25" data-suffix="+">0</strong>
+                        <span>Medical Professionals</span>
+                    </div>
+                    <div class="stat-box">
+                        <strong data-target="10" data-suffix="+">0</strong>
+                        <span>Services</span>
+                    </div>
+                    <div class="stat-box">
+                        <strong data-target="98" data-suffix="%">0</strong>
+                        <span>Patient Satisfaction</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer" id="footer">
+        <div class="site-footer-inner">
+            <div class="footer-brand">
+                <a class="nav_logo" href="index.html">MEDIBuddy</a>
+                <p>Making trusted healthcare more accessible, convenient, and timely.</p>
+            </div>
+
+            <div class="footer-column" role="navigation" aria-label="Footer navigation">
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-cta">
+                <h2>Care made easier</h2>
+                <p>Find the support and services you need with MEDIBuddy.</p>
+                <a class="btn" href="services.html">Explore Services</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MEDIBuddy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const nav = document.querySelector('nav');
+        const menuToggle = document.querySelector('.nav_toggle');
+        const navLinks = document.querySelectorAll('.nav_links a');
+        const loginBtn = document.querySelector('.login-btn');
+        const navLoginBtn = document.querySelector('.nav-login-btn');
+        const registerBtn = document.querySelector('.register-btn');
+        const openLoginLinks = document.querySelectorAll('.open-login');
+        const openSignupLinks = document.querySelectorAll('.open-signup');
+        const loginSection = document.querySelector('.login-section');
+        const signupSection = document.querySelector('.signup-section');
+        const closeButtons = document.querySelectorAll('.modal-close');
+        const loginSubmit = document.querySelector('.login-submit');
+        const statValues = document.querySelectorAll('.stat-box strong');
+
+        let lastScrollY = window.scrollY;
+        let scrollDelta = 0;
+        const scrollThreshold = 4;
+        let navSpacer;
+
+        const showNav = () => {
+            if (!nav.classList.contains('nav-fixed')) {
+                navSpacer = document.createElement('div');
+                navSpacer.className = 'nav-scroll-spacer';
+                navSpacer.setAttribute('aria-hidden', 'true');
+                navSpacer.style.height = `${nav.offsetHeight}px`;
+                nav.insertAdjacentElement('afterend', navSpacer);
+                nav.classList.add('nav-fixed');
+            }
+
+            nav.classList.remove('nav-hidden');
+        };
+
+        const releaseNav = () => {
+            nav.classList.remove('nav-fixed', 'nav-hidden');
+            navSpacer?.remove();
+            navSpacer = null;
+        };
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = Math.max(0, window.scrollY);
+            scrollDelta += currentScrollY - lastScrollY;
+            lastScrollY = currentScrollY;
+
+            if (currentScrollY === 0) {
+                scrollDelta = 0;
+                releaseNav();
+                return;
+            }
+
+            if (Math.abs(scrollDelta) < scrollThreshold) return;
+
+            if (scrollDelta > 0) {
+                showNav();
+            } else {
+                nav.classList.add('nav-hidden');
+                if (currentScrollY <= nav.offsetHeight) releaseNav();
+            }
+
+            scrollDelta = 0;
+        }, { passive: true });
+
+        document.querySelectorAll('.signup-form').forEach((form) => {
+            const passwordInput = form.querySelector('#signup-password');
+            const confirmPasswordInput = form.querySelector('#confirm-password');
+            const passwordMessage = form.querySelector('.password-message');
+
+            if (!passwordInput || !confirmPasswordInput || !passwordMessage) return;
+
+            const validatePasswords = () => {
+                const password = passwordInput.value;
+                const confirmPassword = confirmPasswordInput.value;
+                const hasValue = confirmPassword.length > 0;
+                const isMatch = password === confirmPassword && password.length > 0 && confirmPassword.length > 0;
+
+                confirmPasswordInput.classList.toggle('invalid', hasValue && !isMatch);
+                passwordMessage.textContent = hasValue && !isMatch ? 'Passwords do not match' : '';
+                passwordMessage.classList.toggle('error', hasValue && !isMatch);
+
+                return isMatch;
+            };
+
+            passwordInput.addEventListener('input', validatePasswords);
+            confirmPasswordInput.addEventListener('input', validatePasswords);
+
+            form.addEventListener('submit', (event) => {
+                if (!validatePasswords()) {
+                    event.preventDefault();
+                    confirmPasswordInput.classList.add('invalid');
+                    confirmPasswordInput.focus();
+                    passwordMessage.textContent = 'Passwords do not match';
+                    passwordMessage.classList.add('error');
+                }
+            });
+        });
+
+        if (loginBtn) {
+            loginBtn.addEventListener('click', () => {
+                window.location.href = 'services.html';
+            });
+        }
+
+        const animateCount = (element) => {
+            if (element.dataset.animated === 'true') return;
+
+            const target = Number(element.dataset.target || 0);
+            const suffix = element.dataset.suffix || '';
+            const duration = 900;
+            const startTime = performance.now();
+
+            const updateValue = (time) => {
+                const progress = Math.min((time - startTime) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 4);
+                const currentValue = Math.round(target * eased);
+                element.textContent = `${currentValue}${suffix}`;
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateValue);
+                } else {
+                    element.textContent = `${target}${suffix}`;
+                    element.dataset.animated = 'true';
+                }
+            };
+
+            requestAnimationFrame(updateValue);
+        };
+
+        const statsSection = document.querySelector('.stats-section');
+
+        if (statsSection) {
+            const statsObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+
+                    statValues.forEach((value) => animateCount(value));
+                    observer.unobserve(entry.target);
+                });
+            }, { threshold: 0.35 });
+
+            statsObserver.observe(statsSection);
+        }
+
+        menuToggle.addEventListener('click', () => nav.classList.toggle('open'));
+        navLinks.forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
+
+        const openModal = (modal) => {
+            modal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeModal = (modal) => {
+            modal.classList.remove('open');
+            document.body.style.overflow = '';
+        };
+
+        if (registerBtn) {
+            registerBtn.addEventListener('click', () => openModal(signupSection));
+        }
+
+        if (navLoginBtn) {
+            navLoginBtn.addEventListener('click', () => openModal(loginSection));
+        }
+
+        openLoginLinks.forEach(link => link.addEventListener('click', (event) => {
+            event.preventDefault();
+            closeModal(signupSection);
+            openModal(loginSection);
+        }));
+
+        openSignupLinks.forEach(link => link.addEventListener('click', (event) => {
+            event.preventDefault();
+            closeModal(loginSection);
+            openModal(signupSection);
+        }));
+
+        closeButtons.forEach(button => button.addEventListener('click', () => {
+            closeModal(loginSection);
+            closeModal(signupSection);
+        }));
+
+        loginSubmit.addEventListener('click', () => {
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+
+</html>

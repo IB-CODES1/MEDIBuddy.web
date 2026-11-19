@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEDIBuddy | Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="services-page">
+    <div class="container service-page-shell">
+        <nav>
+            <div class="nav_logo">MEDIBuddy</div>
+            <button class="nav_toggle" aria-label="Toggle menu"><i class="ri-menu-line"></i></button>
+            <ul class="nav_links">
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="index.html#about">About Us</a></li>
+                <li class="links"><a href="services.html">Services</a></li>
+                <li class="links"><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="btn register-btn" type="button">Register Now</button>
+        </nav>
+
+        <section class="signup-section modal-section">
+            <div class="signup-card modal-card" id="sign-up">
+                <div class="signup-intro">
+                    <p class="signup-badge">Join MEDIBuddy</p>
+                    <button class="modal-close" type="button" aria-label="Close sign up"><i class="ri-close-line"></i></button>
+
+                    <h2>Create your account</h2>
+                    <p>Get quick medical help, book services, and stay connected with trusted professionals.</p>
+                </div>
+
+                <form class="signup-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email Address</label>
+                        <input type="email" id="signup-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" required>
+                            <option value="">Select gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="other">Other</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                        <small class="password-message" aria-live="polite"></small>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label" for="terms">
+                            <input type="checkbox" id="terms" required>
+                            <span>I agree to the Terms &amp; Conditions</span>
+                        </label>
+                    </div>
+                    <button class="btn signup-btn" type="submit">Sign Up</button>
+                </form>
+
+                <p class="form-footer">Already have an account? <a href="#" class="open-login">Log in</a></p>
+            </div>
+        </section>
+
+        <section class="login-section modal-section">
+            <div class="signup-card modal-card" id="login-modal">
+                <div class="signup-intro">
+                    <p class="signup-badge">Member Login</p>
+                    <button class="modal-close" type="button" aria-label="Close login"><i class="ri-close-line"></i></button>
+
+                    <h2>Welcome Back</h2>
+                    <p>Enter your email and password to access your dashboard.</p>
+                </div>
+
+                <form class="signup-form login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                    <p class="login-note">Don’t have an account yet? <a href="#" class="open-signup">Create Account</a></p>
+                    <button class="btn signup-btn login-submit" type="button">Login</button>
+                </form>
+            </div>
+        </section>
+
+        <header class="service-header">
+            <p class="eyebrow">Our Services</p>
+            <h1>Healthcare Support Tailored to Your Needs</h1>
+            <p>Explore trusted medical services designed to make healthcare more convenient, faster, and more accessible for every patient.</p>
+        </header>
+
+        <main class="service-grid" aria-label="medical services list">
+            <article class="service-card">
+                <div class="service-visual" data-images="DC1.jpeg,DC2.jpeg">
+                    <img class="service-image active" src="img/DC1.jpeg" alt="Doctor consultation first image" />
+                    <img class="service-image" src="img/DC2.jpeg" alt="Doctor consultation second image" />
+                </div>
+                <div class="service-content">
+                    <h3>Doctor Consultation</h3>
+                    <p>Consult qualified medical professionals.</p>
+                    <button class="btn service-action" type="button">Learn More</button>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-visual" data-images="AB1.jpeg,AB2.jpeg">
+                    <img class="service-image active" src="img/AB1.jpeg" alt="Appointment booking first image" />
+                    <img class="service-image" src="img/AB2.jpeg" alt="Appointment booking second image" />
+                </div>
+                <div class="service-content">
+                    <h3>Appointment Booking</h3>
+                    <p>Schedule an appointment with a medical professional.</p>
+                    <button class="btn service-action" type="button">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-visual" data-images="LS1.jpeg,LS2.jpeg">
+                    <img class="service-image active" src="img/LS1.jpeg" alt="Laboratory services first image" />
+                    <img class="service-image" src="img/LS2.jpeg" alt="Laboratory services second image" />
+                </div>
+                <div class="service-content">
+                    <h3>Laboratory Services</h3>
+                    <p>Request or schedule available laboratory tests.</p>
+                    <button class="btn service-action" type="button">View Tests</button>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-visual" data-images="HC1.jpeg,HC2.jpeg">
+                    <img class="service-image active" src="img/HC1.jpeg" alt="Health checkup first image" />
+                    <img class="service-image" src="img/HC2.jpeg" alt="Health checkup second image" />
+                </div>
+                <div class="service-content">
+                    <h3>Health Checkup</h3>
+                    <p>Access available health screening packages.</p>
+                    <button class="btn service-action" type="button">View Checkups</button>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-visual" data-images="OC1.jpeg,OC2.jpeg">
+                    <img class="service-image active" src="img/OC1.jpeg" alt="Online consultation first image" />
+                    <img class="service-image" src="img/OC2.jpeg" alt="Online consultation second image" />
+                </div>
+                <div class="service-content">
+                    <h3>Online Consultation</h3>
+                    <p>Connect with healthcare professionals remotely.</p>
+                    <button class="btn service-action" type="button">Consult Online</button>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-visual" data-images="PM1.jpeg,PM2.jpeg">
+                    <img class="service-image active" src="img/PM1.jpeg" alt="Prescription medication first image" />
+                    <img class="service-image" src="img/PM2.jpeg" alt="Prescription medication second image" />
+                </div>
+                <div class="service-content">
+                    <h3>Prescription / Medication</h3>
+                    <p>Manage prescription-related requests.</p>
+                    <button class="btn service-action" type="button">Learn More</button>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-visual" data-images="ES1.jpeg,ES2.jpeg">
+                    <img class="service-image active" src="img/ES1.jpeg" alt="Emergency support first image" />
+                    <img class="service-image" src="img/ES2.jpeg" alt="Emergency support second image" />
+                </div>
+                <div class="service-content">
+                    <h3>Emergency Support</h3>
+                    <p>Get information on available emergency assistance.</p>
+                    <button class="btn service-action" type="button">Get Help</button>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer class="site-footer" id="footer">
+        <div class="site-footer-inner">
+            <div class="footer-brand">
+                <a class="nav_logo" href="index.html">MEDIBuddy</a>
+                <p>Making trusted healthcare more accessible, convenient, and timely.</p>
+            </div>
+
+            <div class="footer-column" role="navigation" aria-label="Footer navigation">
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-cta">
+                <h2>Care made easier</h2>
+                <p>Find the support and services you need with MEDIBuddy.</p>
+                <a class="btn" href="services.html">Explore Services</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MEDIBuddy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const nav = document.querySelector('nav');
+        const menuToggle = document.querySelector('.nav_toggle');
+        const navLinks = document.querySelectorAll('.nav_links a');
+        const registerBtn = document.querySelector('.register-btn');
+        const loginSection = document.querySelector('.login-section');
+        const signupSection = document.querySelector('.signup-section');
+        const openLoginLinks = document.querySelectorAll('.open-login');
+        const openSignupLinks = document.querySelectorAll('.open-signup');
+        const closeButtons = document.querySelectorAll('.modal-close');
+        const serviceButtons = document.querySelectorAll('.service-action');
+        const loginSubmit = document.querySelector('.login-submit');
+
+        let lastScrollY = window.scrollY;
+        let scrollDelta = 0;
+        const scrollThreshold = 4;
+        let navSpacer;
+
+        const showNav = () => {
+            if (!nav.classList.contains('nav-fixed')) {
+                navSpacer = document.createElement('div');
+                navSpacer.className = 'nav-scroll-spacer';
+                navSpacer.setAttribute('aria-hidden', 'true');
+                navSpacer.style.height = `${nav.offsetHeight}px`;
+                nav.insertAdjacentElement('afterend', navSpacer);
+                nav.classList.add('nav-fixed');
+            }
+
+            nav.classList.remove('nav-hidden');
+        };
+
+        const releaseNav = () => {
+            nav.classList.remove('nav-fixed', 'nav-hidden');
+            navSpacer?.remove();
+            navSpacer = null;
+        };
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = Math.max(0, window.scrollY);
+            scrollDelta += currentScrollY - lastScrollY;
+            lastScrollY = currentScrollY;
+
+            if (currentScrollY === 0) {
+                scrollDelta = 0;
+                releaseNav();
+                return;
+            }
+
+            if (Math.abs(scrollDelta) < scrollThreshold) return;
+
+            if (scrollDelta > 0) {
+                showNav();
+            } else {
+                nav.classList.add('nav-hidden');
+                if (currentScrollY <= nav.offsetHeight) releaseNav();
+            }
+
+            scrollDelta = 0;
+        }, { passive: true });
+
+        document.querySelectorAll('.signup-form').forEach((form) => {
+            const passwordInput = form.querySelector('#signup-password');
+            const confirmPasswordInput = form.querySelector('#confirm-password');
+            const passwordMessage = form.querySelector('.password-message');
+
+            if (!passwordInput || !confirmPasswordInput || !passwordMessage) return;
+
+            const validatePasswords = () => {
+                const password = passwordInput.value;
+                const confirmPassword = confirmPasswordInput.value;
+                const hasValue = confirmPassword.length > 0;
+                const isMatch = password === confirmPassword && password.length > 0 && confirmPassword.length > 0;
+
+                confirmPasswordInput.classList.toggle('invalid', hasValue && !isMatch);
+                passwordMessage.textContent = hasValue && !isMatch ? 'Passwords do not match' : '';
+                passwordMessage.classList.toggle('error', hasValue && !isMatch);
+
+                return isMatch;
+            };
+
+            passwordInput.addEventListener('input', validatePasswords);
+            confirmPasswordInput.addEventListener('input', validatePasswords);
+
+            form.addEventListener('submit', (event) => {
+                if (!validatePasswords()) {
+                    event.preventDefault();
+                    confirmPasswordInput.classList.add('invalid');
+                    confirmPasswordInput.focus();
+                    passwordMessage.textContent = 'Passwords do not match';
+                    passwordMessage.classList.add('error');
+                }
+            });
+        });
+
+        const openModal = (modal) => {
+            if (!modal) return;
+            modal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeModal = (modal) => {
+            if (!modal) return;
+            modal.classList.remove('open');
+            document.body.style.overflow = '';
+        };
+
+        menuToggle.addEventListener('click', () => nav.classList.toggle('open'));
+        navLinks.forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
+
+        if (registerBtn) {
+            registerBtn.addEventListener('click', () => openModal(signupSection));
+        }
+
+        serviceButtons.forEach(button => {
+            button.addEventListener('click', () => openModal(loginSection));
+        });
+
+        openLoginLinks.forEach(link => link.addEventListener('click', (event) => {
+            event.preventDefault();
+            closeModal(signupSection);
+            openModal(loginSection);
+        }));
+
+        openSignupLinks.forEach(link => link.addEventListener('click', (event) => {
+            event.preventDefault();
+            closeModal(loginSection);
+            openModal(signupSection);
+        }));
+
+        closeButtons.forEach(button => button.addEventListener('click', () => {
+            closeModal(loginSection);
+            closeModal(signupSection);
+        }));
+
+        if (loginSubmit) {
+            loginSubmit.addEventListener('click', () => {
+                window.location.href = 'dashboard.html';
+            });
+        }
+
+        const serviceVisuals = document.querySelectorAll('.service-visual');
+        serviceVisuals.forEach((visual) => {
+            const images = [...visual.querySelectorAll('.service-image')];
+            if (images.length < 2) return;
+
+            let index = 0;
+            setInterval(() => {
+                images[index].classList.remove('active');
+                index = (index + 1) % images.length;
+                images[index].classList.add('active');
+            }, 2200);
+        });
+    </script>
+</body>
+
+</html>
